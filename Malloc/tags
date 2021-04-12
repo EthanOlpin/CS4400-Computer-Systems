@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALIGN	mm.c	28;"	d	file:
+ALIGNMENT	mm.c	21;"	d	file:
+CHUNK_HEADER	mm.c	48;"	d	file:
+CHUNK_OVERHEAD	mm.c	23;"	d	file:
+CHUNK_PAD	mm.c	25;"	d	file:
+FOOTER	mm.c	45;"	d	file:
+GET	mm.c	35;"	d	file:
+GET_ALLOC	mm.c	40;"	d	file:
+GET_SIZE	mm.c	41;"	d	file:
+HEADER	mm.c	44;"	d	file:
+MIN_FREE_BLOCK_SIZE	mm.c	24;"	d	file:
+NXT_BLK_PTR	mm.c	47;"	d	file:
+OVERHEAD	mm.c	22;"	d	file:
+PACK	mm.c	38;"	d	file:
+PAGE_ALIGN	mm.c	33;"	d	file:
+PAGE_OFFSET	mm.c	30;"	d	file:
+PREV_BLK_PTR	mm.c	46;"	d	file:
+PUT	mm.c	36;"	d	file:
+add_to_free_list	mm.c	/^void add_to_free_list(void* p){$/;"	f
+alloc_block	mm.c	/^void alloc_block(void* p, size_t size){$/;"	f
+chunk_header	mm.c	/^} chunk_header;$/;"	t	typeref:struct:__anon1	file:
+chunk_list_head	mm.c	/^chunk_header* chunk_list_head = NULL;$/;"	v
+coalesce	mm.c	/^void* coalesce(void* ptr){$/;"	f
+extend	mm.c	/^void extend(void* ptr, size_t new_size){$/;"	f
+find_free_block_bf	mm.c	/^void *find_free_block_bf(size_t target_size){$/;"	f
+find_free_block_ff	mm.c	/^void *find_free_block_ff(size_t target_size){$/;"	f
+footer	mm.c	/^typedef size_t footer;$/;"	t	file:
+free_block	mm.c	/^} free_block;$/;"	t	typeref:struct:__anon2	file:
+free_list_head	mm.c	/^free_block* free_list_head = NULL;$/;"	v
+get_chunk_header	mm.c	/^chunk_header *get_chunk_header(void* ptr){$/;"	f
+header	mm.c	/^typedef size_t header;$/;"	t	file:
+init_chunk	mm.c	/^void *init_chunk(size_t payload_size){$/;"	f
+is_in_free_chunk	mm.c	/^size_t is_in_free_chunk(void* ptr){$/;"	f
+mm_free	mm.c	/^void mm_free(void *ptr)$/;"	f
+mm_init	mm.c	/^int mm_init(void)$/;"	f
+mm_malloc	mm.c	/^void *mm_malloc(size_t size)$/;"	f
+new_chunk_size	mm.c	/^int new_chunk_size = 1;$/;"	v
+next	mm.c	/^  void* next;$/;"	m	struct:__anon1	file:
+next	mm.c	/^  void* next;$/;"	m	struct:__anon2	file:
+prev	mm.c	/^  void* prev;$/;"	m	struct:__anon1	file:
+prev	mm.c	/^  void* prev;$/;"	m	struct:__anon2	file:
+remove_chunk	mm.c	/^void remove_chunk(chunk_header* ptr, size_t chunk_size){$/;"	f
+remove_from_free_list	mm.c	/^void remove_from_free_list(free_block* p){$/;"	f

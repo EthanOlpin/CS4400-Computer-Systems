@@ -1,0 +1,706 @@
+Testing subl
+FAIL
+Expected:
+"-1 (0xffffffff)
+1 (0x1)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing addl_imm_reg
+FAIL
+Expected:
+"1 (0x1)
+-1 (0xffffffff)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing movl_imm
+FAIL
+Expected:
+"1 (0x1)
+2 (0x2)
+3 (0x3)
+4 (0x4)
+5 (0x5)
+6 (0x6)
+7 (0x7)
+8 (0x8)
+9 (0x9)
+10 (0xa)
+11 (0xb)
+12 (0xc)
+13 (0xd)
+14 (0xe)
+15 (0xf)
+16 (0x10)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing movl_reg_reg
+FAIL
+Expected:
+"1 (0x1)
+1 (0x1)
+1 (0x1)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing addl_reg_reg
+FAIL
+Expected:
+"2 (0x2)
+2 (0x2)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing imull
+FAIL
+Expected:
+"6 (0x6)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing simple_return
+FAIL
+Expected:
+"0 (0x0)
+"
+Got:
+"Value is %b
+Value is %b
+"
+Testing jmp
+FAIL
+Expected:
+"10 (0xa)
+11 (0xb)
+12 (0xc)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing shrl
+FAIL
+Expected:
+"10 (0xa)
+5 (0x5)
+2 (0x2)
+1 (0x1)
+0 (0x0)
+2147483647 (0x7fffffff)
+2147467264 (0x7fffc000)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing movl_deref
+FAIL
+Expected:
+"1012 (0x3f4)
+1 (0x1)
+2 (0x2)
+3 (0x3)
+1 (0x1)
+2 (0x2)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing movl_deref2
+FAIL
+Expected:
+"555 (0x22b)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing unaligned1
+FAIL
+Expected:
+"4660 (0x1234)
+18 (0x12)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing unaligned2
+FAIL
+Expected:
+"4660 (0x1234)
+1192960 (0x123400)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing pushpop
+FAIL
+Expected:
+"1020 (0x3fc)
+1 (0x1)
+2 (0x2)
+3 (0x3)
+2 (0x2)
+1 (0x1)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing callret
+FAIL
+Expected:
+"1 (0x1)
+2 (0x2)
+3 (0x3)
+2 (0x2)
+1 (0x1)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing callret2
+FAIL
+Expected:
+"1016 (0x3f8)
+1020 (0x3fc)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing stack_multibyte
+FAIL
+Expected:
+"-21555 (0xffffabcd)
+-21555 (0xffffabcd)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing cmpl
+FAIL
+Expected:
+"64 (0x40)
+64 (0x40)
+0 (0x0)
+129 (0x81)
+128 (0x80)
+1 (0x1)
+129 (0x81)
+0 (0x0)
+2177 (0x881)
+2048 (0x800)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing je
+FAIL
+Expected:
+"10 (0xa)
+11 (0xb)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing jl
+FAIL
+Expected:
+"10 (0xa)
+11 (0xb)
+12 (0xc)
+13 (0xd)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing jle
+FAIL
+Expected:
+"11 (0xb)
+12 (0xc)
+13 (0xd)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing jge
+FAIL
+Expected:
+"11 (0xb)
+12 (0xc)
+13 (0xd)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing jbe
+FAIL
+Expected:
+"11 (0xb)
+12 (0xc)
+13 (0xd)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing factorial
+FAIL
+Expected:
+"120 (0x78)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing log2
+FAIL
+Expected:
+"4 (0x4)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Testing sort
+FAIL
+Expected:
+"-9 (0xfffffff7)
+-4 (0xfffffffc)
+0 (0x0)
+1 (0x1)
+7 (0x7)
+34 (0x22)
+"
+Got:
+"Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+Value is %b
+"
+Passed 0 / 26 tests
